@@ -1,0 +1,26 @@
+add 'Sherlock Holmes' 1413
+add 'John Watson' 5835
+add 'Greg Lestrade' 12425
+add 'Mrs Hudson' 2732
+add 'Mycroft Holmes' 2329
+add 'Molly Hooper' 14092
+add 'Jim Moriarty' 26923
+add 'Mary Morstan' 25931
+add 'Sally Donovan' 17215
+add 'Sarah Sawyer' 30880
+add 'Philip Anderson' 32443
+add 'Ella' 23237
+add 'Anthea' 11118
+add 'Mike Stamford' 4588
+add 'Derek Ian Dimmock' 9378
+add 'Irene Adler' 4974
+add 'Janine Hawkins' 15322
+add 'Mrs Holmes' 23689
+add 'Mr Holmes' 6144
+add 'Charles Augustus Magnussen' 22585
+add 'Tom' 29089
+add 'Archie' 14507
+add 'Lady Smallwood' 26086
+add 'Sir Edwin' 201
+add 'Bill Wiggins' 19980
+add 'Eurus Holmes' 29737

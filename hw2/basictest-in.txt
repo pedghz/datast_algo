@@ -1,0 +1,72 @@
+# Read in example data
+read 'example-data.txt'
+size
+median
+1stquartile
+3rdquartile
+ceo
+# Add persons, see how quartiles change
+add 'Scrooge McDuck' scr 'Banker' 1000000000
+ceo
+add_boss richbastard scr
+ceo
+median
+1stquartile
+3rdquartile
+add 'Whatever Williams' ww 'basic worker' 9000
+median
+1stquartile
+3rdquartile
+alphalist
+add 'Olematon Oskari' oo 'Nothing' 0
+titlelist 'basic worker'
+find 'Olematon Oskari'
+add_boss oo ww
+underlings ww
+underlings richbastard
+add_boss ww mm
+underlings richbastard
+median
+1stquartile
+3rdquartile
+salarylist
+min
+max
+titlelist 'no such title'
+change_name ww 'Olematon Oskari'
+find 'Olematon Oskari'
+change_name oo 'Onni Onnellinen'
+find 'Olematon Oskari'
+change_salary oo 3
+min
+change_salary scr 1234
+max
+median
+1stquartile
+3rdquartile
+# AFTER THIS NON-COMPULSORY PARTS ARE TESTED
+higher_lower_ranks mm
+higher_lower_ranks scr
+higher_lower_ranks nobody
+higher_lower_ranks oo
+nearest_common_boss oo kk2
+nearest_common_boss oo ww
+nearest_common_boss kk1 oo
+nearest_common_boss kk2 richbastard
+nearest_common_boss oo scr
+remove mm
+underlings scr
+nearest_common_boss oo ww
+remove nobody
+higher_lower_ranks richbastard
+remove richbastard
+remove scr
+median
+1stquartile
+3rdquartile
+min
+max
+ceo
+nearest_common_boss kk2 oo
+nearest_common_boss kk2 kk1
+quit

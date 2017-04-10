@@ -1,0 +1,97 @@
+> # Test initial empty datastructure
+> size
+Number of employees: 0
+> # Add one person and test everything
+> add 'Herbert Whoami' hw 'worker' 100
+> size
+Number of employees: 1
+> min
+id hw : worker Herbert Whoami, salary 100
+> max
+id hw : worker Herbert Whoami, salary 100
+> median
+id hw : worker Herbert Whoami, salary 100
+> 1stquartile
+id hw : worker Herbert Whoami, salary 100
+> 3rdquartile
+id hw : worker Herbert Whoami, salary 100
+> salarylist
+id hw : worker Herbert Whoami, salary 100
+> alphalist
+id hw : worker Herbert Whoami, salary 100
+> titlelist 'worker'
+id hw : worker Herbert Whoami, salary 100
+> titlelist 'something else'
+> change_name hw 'No Body'
+id hw : worker No Body, salary 100
+> alphalist
+id hw : worker No Body, salary 100
+> change_salary hw 200
+id hw : worker No Body, salary 200
+> median
+id hw : worker No Body, salary 200
+> # Add two persons and boss relationships
+> add 'Cecil Edward Ogg' 1 'ceo' 1000000
+> add 'Other Worker' ow 'worker' 500
+> size
+Number of employees: 3
+> add_boss hw 1
+> add_boss ow 1
+> min
+id hw : worker No Body, salary 200
+> max
+id 1 : ceo Cecil Edward Ogg, salary 1000000
+> median
+id ow : worker Other Worker, salary 500
+> 1stquartile
+id hw : worker No Body, salary 200
+> 3rdquartile
+id 1 : ceo Cecil Edward Ogg, salary 1000000
+> alphalist
+id 1 : ceo Cecil Edward Ogg, salary 1000000
+id hw : worker No Body, salary 200
+id ow : worker Other Worker, salary 500
+> salarylist
+id hw : worker No Body, salary 200
+id ow : worker Other Worker, salary 500
+id 1 : ceo Cecil Edward Ogg, salary 1000000
+> ceo
+id 1 : ceo Cecil Edward Ogg, salary 1000000
+> underlings 1
+id 1 : ceo Cecil Edward Ogg, salary 1000000
+ id hw : worker No Body, salary 200
+ id ow : worker Other Worker, salary 500
+> # AFTER THIS NON-COMPULSORY PARTS ARE TESTED
+> nearest_common_boss hw ow
+id 1 : ceo Cecil Edward Ogg, salary 1000000
+> higher_lower_ranks 1
+Persons with higher rank (closer to ceo): 0
+Persons with lower rank (further away from ceo): 2
+> higher_lower_ranks hw
+Persons with higher rank (closer to ceo): 1
+Persons with lower rank (further away from ceo): 0
+> # Remove persons
+> remove hw
+> remove 1
+> size
+Number of employees: 1
+> min
+id ow : worker Other Worker, salary 500
+> max
+id ow : worker Other Worker, salary 500
+> median
+id ow : worker Other Worker, salary 500
+> 1stquartile
+id ow : worker Other Worker, salary 500
+> 3rdquartile
+id ow : worker Other Worker, salary 500
+> alphalist
+id ow : worker Other Worker, salary 500
+> salarylist
+id ow : worker Other Worker, salary 500
+> # Clear and check we have nothing
+> clear
+Cleared all persons
+> size
+Number of employees: 0
+> 

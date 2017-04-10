@@ -1,0 +1,75 @@
+add 'Bill' BillWalsh 'good' 64411
+add 'Mike' MikeHolmgren 'good' 57460
+add 'Jim' JimFassel 'ugly' 18344
+add 'Paul' PaulHackett 'bad' 77312
+add 'Sam' SamWyche 'ugly' 13968
+add 'George' GeorgeSeifert 'ugly' 25123
+add 'Dennis' DennisGreen 'bad' 53497
+add 'Jim' JimZorn 'good' 55230
+add_boss MikeHolmgren BillWalsh
+add_boss JimFassel BillWalsh
+add_boss PaulHackett BillWalsh
+add_boss SamWyche BillWalsh
+add_boss GeorgeSeifert BillWalsh
+add_boss DennisGreen BillWalsh
+add_boss JimZorn MikeHolmgren
+add 'Mike' MikeSherman 'bad' 34104
+add 'Andy' AndyReid 'bad' 67585
+add 'Ray' RayRhodes 'good' 33400
+add 'Steve' SteveMariucci 'good' 3584
+add 'John' JohnFox 'ugly' 21720
+add 'Mike' MikeMcCarthy 'bad' 19307
+add 'Jon' JonGruden 'good' 1336
+add 'Bruce' BruceCoslet 'ugly' 53049
+add 'Mike' MikeShanahan 'good' 70008
+add 'Jett' JettFisher 'bad' 45815
+add 'Mike' MikeTice 'good' 57608
+add 'Brian' BrianBillick 'good' 34028
+add 'John' JohnHarbaugh 'ugly' 18488
+add 'Brad' BradChildress 'bad' 21930
+add 'Jim' JimMora 'bad' 19477
+add 'Marty' MartyMornhinweg 'good' 29066
+add 'Raheem' RaheemMorris 'bad' 18395
+add 'Bill' BillCallahan 'bad' 11011
+add 'Gary' GaryKubiak 'bad' 64373
+add 'Jim' JimSchwartz 'ugly' 85855
+add 'Scott' ScottLinehan 'ugly' 15015
+add 'Jack' JackDelRio 'bad' 29281
+add 'Mike' MikeNolan 'good' 81903
+add 'Rex' RexRyan 'ugly' 65599
+add 'Tom' TomCable 'ugly' 35522
+add 'Jim' JimHarbaugh 'ugly' 37186
+add 'Pete' PeteCarroll 'bad' 4120
+add_boss MikeSherman MikeHolmgren
+add_boss AndyReid MikeHolmgren
+add_boss RayRhodes MikeHolmgren
+add_boss SteveMariucci MikeHolmgren
+add_boss JohnFox JimFassel
+add_boss MikeMcCarthy PaulHackett
+add_boss JonGruden PaulHackett
+add_boss BruceCoslet SamWyche
+add_boss MikeShanahan GeorgeSeifert
+add_boss JettFisher GeorgeSeifert
+add_boss MikeTice DennisGreen
+add_boss BrianBillick DennisGreen
+add_boss JohnHarbaugh AndyReid
+add_boss BradChildress AndyReid
+add_boss JimMora SteveMariucci
+add_boss MartyMornhinweg SteveMariucci
+add_boss RaheemMorris JonGruden
+add_boss BillCallahan JonGruden
+add_boss GaryKubiak MikeShanahan
+add_boss JimSchwartz JettFisher
+add_boss ScottLinehan MikeTice
+add_boss JackDelRio BrianBillick
+add_boss MikeNolan BrianBillick
+add_boss RexRyan BrianBillick
+add_boss TomCable AndyReid
+add_boss JimHarbaugh AndyReid
+add_boss PeteCarroll BruceCoslet
+add 'Mike' MikeSmith 'bad' 45495
+add 'Mike' MikeSingletary 'ugly' 27654
+add 'Norv' NorvTurner 'good' 69946
+add_boss MikeSmith JackDelRio
+add_boss MikeSingletary MikeNolan
+add_boss NorvTurner MikeNolan

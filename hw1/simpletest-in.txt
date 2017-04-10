@@ -1,0 +1,15 @@
+# Test initial empty datastructure
+size
+# Add one person and test everything
+add 'Herbert Whoami' 100
+size
+min
+max
+median
+1stquartile
+3rdquartile
+salarylist
+alphalist
+# Clear and check we have nothing
+clear
+size

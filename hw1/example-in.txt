@@ -1,0 +1,12 @@
+clear
+size
+read 'example-data.txt'
+size
+min
+max
+median
+alphalist
+salarylist
+1stquartile
+3rdquartile
+quit

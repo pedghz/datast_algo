@@ -1,0 +1,11 @@
+# Read in all tests in one go
+testread 'simpletest-in.txt' 'simpletest-out.txt'
+clear
+testread 'example-in.txt' 'example-out.txt'
+clear
+testread 'basictest-in.txt' 'basictest-out.txt'
+clear
+testread 'bigger-in.txt' 'bigger-out.txt'
+# !!!! Remember to check EACH result above!
+# Run the performance test
+read 'performancetest_in.txt'

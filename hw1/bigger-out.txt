@@ -1,0 +1,98 @@
+> # Run a little bigger test
+> read 'bigger-data.txt'
+** Commands from 'bigger-data.txt'
+> add 'Sherlock Holmes' 1413
+> add 'John Watson' 5835
+> add 'Greg Lestrade' 12425
+> add 'Mrs Hudson' 2732
+> add 'Mycroft Holmes' 2329
+> add 'Molly Hooper' 14092
+> add 'Jim Moriarty' 26923
+> add 'Mary Morstan' 25931
+> add 'Sally Donovan' 17215
+> add 'Sarah Sawyer' 30880
+> add 'Philip Anderson' 32443
+> add 'Ella' 23237
+> add 'Anthea' 11118
+> add 'Mike Stamford' 4588
+> add 'Derek Ian Dimmock' 9378
+> add 'Irene Adler' 4974
+> add 'Janine Hawkins' 15322
+> add 'Mrs Holmes' 23689
+> add 'Mr Holmes' 6144
+> add 'Charles Augustus Magnussen' 22585
+> add 'Tom' 29089
+> add 'Archie' 14507
+> add 'Lady Smallwood' 26086
+> add 'Sir Edwin' 201
+> add 'Bill Wiggins' 19980
+> add 'Eurus Holmes' 29737
+> 
+** End of commands from 'bigger-data.txt'
+> size
+Number of employees: 26
+> min
+Sir Edwin, salary 201
+> max
+Philip Anderson, salary 32443
+> salarylist
+Sir Edwin, salary 201
+Sherlock Holmes, salary 1413
+Mycroft Holmes, salary 2329
+Mrs Hudson, salary 2732
+Mike Stamford, salary 4588
+Irene Adler, salary 4974
+John Watson, salary 5835
+Mr Holmes, salary 6144
+Derek Ian Dimmock, salary 9378
+Anthea, salary 11118
+Greg Lestrade, salary 12425
+Molly Hooper, salary 14092
+Archie, salary 14507
+Janine Hawkins, salary 15322
+Sally Donovan, salary 17215
+Bill Wiggins, salary 19980
+Charles Augustus Magnussen, salary 22585
+Ella, salary 23237
+Mrs Holmes, salary 23689
+Mary Morstan, salary 25931
+Lady Smallwood, salary 26086
+Jim Moriarty, salary 26923
+Tom, salary 29089
+Eurus Holmes, salary 29737
+Sarah Sawyer, salary 30880
+Philip Anderson, salary 32443
+> alphalist
+Anthea, salary 11118
+Archie, salary 14507
+Bill Wiggins, salary 19980
+Charles Augustus Magnussen, salary 22585
+Derek Ian Dimmock, salary 9378
+Ella, salary 23237
+Eurus Holmes, salary 29737
+Greg Lestrade, salary 12425
+Irene Adler, salary 4974
+Janine Hawkins, salary 15322
+Jim Moriarty, salary 26923
+John Watson, salary 5835
+Lady Smallwood, salary 26086
+Mary Morstan, salary 25931
+Mike Stamford, salary 4588
+Molly Hooper, salary 14092
+Mr Holmes, salary 6144
+Mrs Holmes, salary 23689
+Mrs Hudson, salary 2732
+Mycroft Holmes, salary 2329
+Philip Anderson, salary 32443
+Sally Donovan, salary 17215
+Sarah Sawyer, salary 30880
+Sherlock Holmes, salary 1413
+Sir Edwin, salary 201
+Tom, salary 29089
+> 1stquartile
+John Watson, salary 5835
+> 3rdquartile
+Mary Morstan, salary 25931
+> median
+Janine Hawkins, salary 15322
+> 

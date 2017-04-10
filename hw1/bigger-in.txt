@@ -1,0 +1,10 @@
+# Run a little bigger test
+read 'bigger-data.txt'
+size
+min
+max
+salarylist
+alphalist
+1stquartile
+3rdquartile
+median

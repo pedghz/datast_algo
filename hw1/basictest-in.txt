@@ -1,0 +1,23 @@
+# Read in example data
+read 'example-data.txt'
+size
+median
+1stquartile
+3rdquartile
+# Add persons, see how quartiles change
+add 'Scrooge McDuck' 1000000000
+median
+1stquartile
+3rdquartile
+add 'Whatever Williams' 9000
+median
+1stquartile
+3rdquartile
+add 'Peter Pennyless' 0
+median
+1stquartile
+3rdquartile
+salarylist
+alphalist
+min
+max

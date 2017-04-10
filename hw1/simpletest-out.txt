@@ -1,0 +1,27 @@
+> # Test initial empty datastructure
+> size
+Number of employees: 0
+> # Add one person and test everything
+> add 'Herbert Whoami' 100
+> size
+Number of employees: 1
+> min
+Herbert Whoami, salary 100
+> max
+Herbert Whoami, salary 100
+> median
+Herbert Whoami, salary 100
+> 1stquartile
+Herbert Whoami, salary 100
+> 3rdquartile
+Herbert Whoami, salary 100
+> salarylist
+Herbert Whoami, salary 100
+> alphalist
+Herbert Whoami, salary 100
+> # Clear and check we have nothing
+> clear
+Cleared all persons
+> size
+Number of employees: 0
+> 

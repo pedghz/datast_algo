@@ -1,0 +1,7 @@
+add 'Meikkis Matti' 2000
+add 'Teikkis Terttu' 4000
+add 'Miljoona Miikka' 1000000
+add 'Sorrettu Sami' 1
+add 'Keskiverto Keijo' 3000
+add 'Kukalie Kirsi' 2500
+add 'Olematon Oskari' 6000

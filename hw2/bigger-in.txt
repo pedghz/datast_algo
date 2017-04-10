@@ -1,0 +1,26 @@
+# Run a little bigger test
+read 'bigger-data.txt'
+size
+min
+salarylist
+1stquartile
+3rdquartile
+ceo
+underlings BillWalsh
+find 'Bill'
+change_name BillCallahan 'Willy'
+find 'Bill'
+max
+median
+change_salary JimSchwartz 10
+max
+median
+salarylist
+titlelist 'good'
+# AFTER THIS NON-COMPULSORY PARTS ARE TESTED
+nearest_common_boss NorvTurner ScottLinehan
+higher_lower_ranks SteveMariucci
+remove BrianBillick
+size
+underlings DennisGreen
+median

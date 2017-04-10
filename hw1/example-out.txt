@@ -1,0 +1,44 @@
+> clear
+Cleared all persons
+> size
+Number of employees: 0
+> read 'example-data.txt'
+** Commands from 'example-data.txt'
+> add 'Meikkis Matti' 2000
+> add 'Teikkis Terttu' 4000
+> add 'Miljoona Miikka' 1000000
+> add 'Sorrettu Sami' 1
+> add 'Keskiverto Keijo' 3000
+> add 'Kukalie Kirsi' 2500
+> add 'Olematon Oskari' 6000
+> 
+** End of commands from 'example-data.txt'
+> size
+Number of employees: 7
+> min
+Sorrettu Sami, salary 1
+> max
+Miljoona Miikka, salary 1000000
+> median
+Keskiverto Keijo, salary 3000
+> alphalist
+Keskiverto Keijo, salary 3000
+Kukalie Kirsi, salary 2500
+Meikkis Matti, salary 2000
+Miljoona Miikka, salary 1000000
+Olematon Oskari, salary 6000
+Sorrettu Sami, salary 1
+Teikkis Terttu, salary 4000
+> salarylist
+Sorrettu Sami, salary 1
+Meikkis Matti, salary 2000
+Kukalie Kirsi, salary 2500
+Keskiverto Keijo, salary 3000
+Teikkis Terttu, salary 4000
+Olematon Oskari, salary 6000
+Miljoona Miikka, salary 1000000
+> 1stquartile
+Meikkis Matti, salary 2000
+> 3rdquartile
+Olematon Oskari, salary 6000
+> quit

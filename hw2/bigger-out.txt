@@ -1,0 +1,259 @@
+> # Run a little bigger test
+> read 'bigger-data.txt'
+** Commands from 'bigger-data.txt'
+> add 'Bill' BillWalsh 'good' 64411
+> add 'Mike' MikeHolmgren 'good' 57460
+> add 'Jim' JimFassel 'ugly' 18344
+> add 'Paul' PaulHackett 'bad' 77312
+> add 'Sam' SamWyche 'ugly' 13968
+> add 'George' GeorgeSeifert 'ugly' 25123
+> add 'Dennis' DennisGreen 'bad' 53497
+> add 'Jim' JimZorn 'good' 55230
+> add_boss MikeHolmgren BillWalsh
+> add_boss JimFassel BillWalsh
+> add_boss PaulHackett BillWalsh
+> add_boss SamWyche BillWalsh
+> add_boss GeorgeSeifert BillWalsh
+> add_boss DennisGreen BillWalsh
+> add_boss JimZorn MikeHolmgren
+> add 'Mike' MikeSherman 'bad' 34104
+> add 'Andy' AndyReid 'bad' 67585
+> add 'Ray' RayRhodes 'good' 33400
+> add 'Steve' SteveMariucci 'good' 3584
+> add 'John' JohnFox 'ugly' 21720
+> add 'Mike' MikeMcCarthy 'bad' 19307
+> add 'Jon' JonGruden 'good' 1336
+> add 'Bruce' BruceCoslet 'ugly' 53049
+> add 'Mike' MikeShanahan 'good' 70008
+> add 'Jett' JettFisher 'bad' 45815
+> add 'Mike' MikeTice 'good' 57608
+> add 'Brian' BrianBillick 'good' 34028
+> add 'John' JohnHarbaugh 'ugly' 18488
+> add 'Brad' BradChildress 'bad' 21930
+> add 'Jim' JimMora 'bad' 19477
+> add 'Marty' MartyMornhinweg 'good' 29066
+> add 'Raheem' RaheemMorris 'bad' 18395
+> add 'Bill' BillCallahan 'bad' 11011
+> add 'Gary' GaryKubiak 'bad' 64373
+> add 'Jim' JimSchwartz 'ugly' 85855
+> add 'Scott' ScottLinehan 'ugly' 15015
+> add 'Jack' JackDelRio 'bad' 29281
+> add 'Mike' MikeNolan 'good' 81903
+> add 'Rex' RexRyan 'ugly' 65599
+> add 'Tom' TomCable 'ugly' 35522
+> add 'Jim' JimHarbaugh 'ugly' 37186
+> add 'Pete' PeteCarroll 'bad' 4120
+> add_boss MikeSherman MikeHolmgren
+> add_boss AndyReid MikeHolmgren
+> add_boss RayRhodes MikeHolmgren
+> add_boss SteveMariucci MikeHolmgren
+> add_boss JohnFox JimFassel
+> add_boss MikeMcCarthy PaulHackett
+> add_boss JonGruden PaulHackett
+> add_boss BruceCoslet SamWyche
+> add_boss MikeShanahan GeorgeSeifert
+> add_boss JettFisher GeorgeSeifert
+> add_boss MikeTice DennisGreen
+> add_boss BrianBillick DennisGreen
+> add_boss JohnHarbaugh AndyReid
+> add_boss BradChildress AndyReid
+> add_boss JimMora SteveMariucci
+> add_boss MartyMornhinweg SteveMariucci
+> add_boss RaheemMorris JonGruden
+> add_boss BillCallahan JonGruden
+> add_boss GaryKubiak MikeShanahan
+> add_boss JimSchwartz JettFisher
+> add_boss ScottLinehan MikeTice
+> add_boss JackDelRio BrianBillick
+> add_boss MikeNolan BrianBillick
+> add_boss RexRyan BrianBillick
+> add_boss TomCable AndyReid
+> add_boss JimHarbaugh AndyReid
+> add_boss PeteCarroll BruceCoslet
+> add 'Mike' MikeSmith 'bad' 45495
+> add 'Mike' MikeSingletary 'ugly' 27654
+> add 'Norv' NorvTurner 'good' 69946
+> add_boss MikeSmith JackDelRio
+> add_boss MikeSingletary MikeNolan
+> add_boss NorvTurner MikeNolan
+> 
+** End of commands from 'bigger-data.txt'
+> size
+Number of employees: 38
+> min
+id JonGruden : good Jon, salary 1336
+> salarylist
+id JonGruden : good Jon, salary 1336
+id SteveMariucci : good Steve, salary 3584
+id PeteCarroll : bad Pete, salary 4120
+id BillCallahan : bad Bill, salary 11011
+id SamWyche : ugly Sam, salary 13968
+id ScottLinehan : ugly Scott, salary 15015
+id JimFassel : ugly Jim, salary 18344
+id RaheemMorris : bad Raheem, salary 18395
+id JohnHarbaugh : ugly John, salary 18488
+id MikeMcCarthy : bad Mike, salary 19307
+id JimMora : bad Jim, salary 19477
+id JohnFox : ugly John, salary 21720
+id BradChildress : bad Brad, salary 21930
+id GeorgeSeifert : ugly George, salary 25123
+id MikeSingletary : ugly Mike, salary 27654
+id MartyMornhinweg : good Marty, salary 29066
+id JackDelRio : bad Jack, salary 29281
+id RayRhodes : good Ray, salary 33400
+id BrianBillick : good Brian, salary 34028
+id MikeSherman : bad Mike, salary 34104
+id TomCable : ugly Tom, salary 35522
+id JimHarbaugh : ugly Jim, salary 37186
+id MikeSmith : bad Mike, salary 45495
+id JettFisher : bad Jett, salary 45815
+id BruceCoslet : ugly Bruce, salary 53049
+id DennisGreen : bad Dennis, salary 53497
+id JimZorn : good Jim, salary 55230
+id MikeHolmgren : good Mike, salary 57460
+id MikeTice : good Mike, salary 57608
+id GaryKubiak : bad Gary, salary 64373
+id BillWalsh : good Bill, salary 64411
+id RexRyan : ugly Rex, salary 65599
+id AndyReid : bad Andy, salary 67585
+id NorvTurner : good Norv, salary 69946
+id MikeShanahan : good Mike, salary 70008
+id PaulHackett : bad Paul, salary 77312
+id MikeNolan : good Mike, salary 81903
+id JimSchwartz : ugly Jim, salary 85855
+> 1stquartile
+id MikeMcCarthy : bad Mike, salary 19307
+> 3rdquartile
+id MikeTice : good Mike, salary 57608
+> ceo
+id BillWalsh : good Bill, salary 64411
+> underlings BillWalsh
+id BillWalsh : good Bill, salary 64411
+ id DennisGreen : bad Dennis, salary 53497
+  id BrianBillick : good Brian, salary 34028
+   id JackDelRio : bad Jack, salary 29281
+    id MikeSmith : bad Mike, salary 45495
+   id MikeNolan : good Mike, salary 81903
+    id MikeSingletary : ugly Mike, salary 27654
+    id NorvTurner : good Norv, salary 69946
+   id RexRyan : ugly Rex, salary 65599
+  id MikeTice : good Mike, salary 57608
+   id ScottLinehan : ugly Scott, salary 15015
+ id GeorgeSeifert : ugly George, salary 25123
+  id JettFisher : bad Jett, salary 45815
+   id JimSchwartz : ugly Jim, salary 85855
+  id MikeShanahan : good Mike, salary 70008
+   id GaryKubiak : bad Gary, salary 64373
+ id JimFassel : ugly Jim, salary 18344
+  id JohnFox : ugly John, salary 21720
+ id MikeHolmgren : good Mike, salary 57460
+  id AndyReid : bad Andy, salary 67585
+   id BradChildress : bad Brad, salary 21930
+   id JimHarbaugh : ugly Jim, salary 37186
+   id JohnHarbaugh : ugly John, salary 18488
+   id TomCable : ugly Tom, salary 35522
+  id JimZorn : good Jim, salary 55230
+  id MikeSherman : bad Mike, salary 34104
+  id RayRhodes : good Ray, salary 33400
+  id SteveMariucci : good Steve, salary 3584
+   id JimMora : bad Jim, salary 19477
+   id MartyMornhinweg : good Marty, salary 29066
+ id PaulHackett : bad Paul, salary 77312
+  id JonGruden : good Jon, salary 1336
+   id BillCallahan : bad Bill, salary 11011
+   id RaheemMorris : bad Raheem, salary 18395
+  id MikeMcCarthy : bad Mike, salary 19307
+ id SamWyche : ugly Sam, salary 13968
+  id BruceCoslet : ugly Bruce, salary 53049
+   id PeteCarroll : bad Pete, salary 4120
+> find 'Bill'
+id BillCallahan : bad Bill, salary 11011
+id BillWalsh : good Bill, salary 64411
+> change_name BillCallahan 'Willy'
+id BillCallahan : bad Willy, salary 11011
+> find 'Bill'
+id BillWalsh : good Bill, salary 64411
+> max
+id JimSchwartz : ugly Jim, salary 85855
+> median
+id MikeSherman : bad Mike, salary 34104
+> change_salary JimSchwartz 10
+id JimSchwartz : ugly Jim, salary 10
+> max
+id MikeNolan : good Mike, salary 81903
+> median
+id BrianBillick : good Brian, salary 34028
+> salarylist
+id JimSchwartz : ugly Jim, salary 10
+id JonGruden : good Jon, salary 1336
+id SteveMariucci : good Steve, salary 3584
+id PeteCarroll : bad Pete, salary 4120
+id BillCallahan : bad Willy, salary 11011
+id SamWyche : ugly Sam, salary 13968
+id ScottLinehan : ugly Scott, salary 15015
+id JimFassel : ugly Jim, salary 18344
+id RaheemMorris : bad Raheem, salary 18395
+id JohnHarbaugh : ugly John, salary 18488
+id MikeMcCarthy : bad Mike, salary 19307
+id JimMora : bad Jim, salary 19477
+id JohnFox : ugly John, salary 21720
+id BradChildress : bad Brad, salary 21930
+id GeorgeSeifert : ugly George, salary 25123
+id MikeSingletary : ugly Mike, salary 27654
+id MartyMornhinweg : good Marty, salary 29066
+id JackDelRio : bad Jack, salary 29281
+id RayRhodes : good Ray, salary 33400
+id BrianBillick : good Brian, salary 34028
+id MikeSherman : bad Mike, salary 34104
+id TomCable : ugly Tom, salary 35522
+id JimHarbaugh : ugly Jim, salary 37186
+id MikeSmith : bad Mike, salary 45495
+id JettFisher : bad Jett, salary 45815
+id BruceCoslet : ugly Bruce, salary 53049
+id DennisGreen : bad Dennis, salary 53497
+id JimZorn : good Jim, salary 55230
+id MikeHolmgren : good Mike, salary 57460
+id MikeTice : good Mike, salary 57608
+id GaryKubiak : bad Gary, salary 64373
+id BillWalsh : good Bill, salary 64411
+id RexRyan : ugly Rex, salary 65599
+id AndyReid : bad Andy, salary 67585
+id NorvTurner : good Norv, salary 69946
+id MikeShanahan : good Mike, salary 70008
+id PaulHackett : bad Paul, salary 77312
+id MikeNolan : good Mike, salary 81903
+> titlelist 'good'
+id BillWalsh : good Bill, salary 64411
+id BrianBillick : good Brian, salary 34028
+id JimZorn : good Jim, salary 55230
+id JonGruden : good Jon, salary 1336
+id MartyMornhinweg : good Marty, salary 29066
+id MikeHolmgren : good Mike, salary 57460
+id MikeNolan : good Mike, salary 81903
+id MikeShanahan : good Mike, salary 70008
+id MikeTice : good Mike, salary 57608
+id NorvTurner : good Norv, salary 69946
+id RayRhodes : good Ray, salary 33400
+id SteveMariucci : good Steve, salary 3584
+> # AFTER THIS NON-COMPULSORY PARTS ARE TESTED
+> nearest_common_boss NorvTurner ScottLinehan
+id DennisGreen : bad Dennis, salary 53497
+> higher_lower_ranks SteveMariucci
+Persons with higher rank (closer to ceo): 7
+Persons with lower rank (further away from ceo): 18
+> remove BrianBillick
+> size
+Number of employees: 37
+> underlings DennisGreen
+id DennisGreen : bad Dennis, salary 53497
+ id JackDelRio : bad Jack, salary 29281
+  id MikeSmith : bad Mike, salary 45495
+ id MikeNolan : good Mike, salary 81903
+  id MikeSingletary : ugly Mike, salary 27654
+  id NorvTurner : good Norv, salary 69946
+ id MikeTice : good Mike, salary 57608
+  id ScottLinehan : ugly Scott, salary 15015
+ id RexRyan : ugly Rex, salary 65599
+> median
+id RayRhodes : good Ray, salary 33400
+> 

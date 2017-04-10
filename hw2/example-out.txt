@@ -1,0 +1,80 @@
+> clear
+Cleared all persons
+> size
+Number of employees: 0
+> read 'example-data.txt'
+** Commands from 'example-data.txt'
+> # Adding people
+> add 'Meikkis Matti' mm 'basic worker' 2000
+> add 'Teikkis Terttu' tt 'technical evangelist' 4000
+> add 'Miljoona Miikka' richbastard 'commander' 1000000
+> add 'Sorrettu Sami' doesall 'general utility' 1
+> add 'Keskiverto Keijo' kk1 'basic worker' 3000
+> add 'Kukalie Kirsi' kk2 'basic worker' 2500
+> add 'Olematon Oskari' nobody 'useless' 6000
+> # Adding boss relationships
+> add_boss mm richbastard
+> add_boss doesall mm
+> add_boss nobody mm
+> add_boss tt richbastard
+> add_boss kk1 tt
+> add_boss kk2 tt
+> 
+** End of commands from 'example-data.txt'
+> size
+Number of employees: 7
+> min
+id doesall : general utility Sorrettu Sami, salary 1
+> max
+id richbastard : commander Miljoona Miikka, salary 1000000
+> median
+id kk1 : basic worker Keskiverto Keijo, salary 3000
+> find 'Keskiverto Keijo'
+id kk1 : basic worker Keskiverto Keijo, salary 3000
+> salarylist
+id doesall : general utility Sorrettu Sami, salary 1
+id mm : basic worker Meikkis Matti, salary 2000
+id kk2 : basic worker Kukalie Kirsi, salary 2500
+id kk1 : basic worker Keskiverto Keijo, salary 3000
+id tt : technical evangelist Teikkis Terttu, salary 4000
+id nobody : useless Olematon Oskari, salary 6000
+id richbastard : commander Miljoona Miikka, salary 1000000
+> 1stquartile
+id mm : basic worker Meikkis Matti, salary 2000
+> 3rdquartile
+id nobody : useless Olematon Oskari, salary 6000
+> change_name kk1 'Kaikenlainen Kaija'
+id kk1 : basic worker Kaikenlainen Kaija, salary 3000
+> alphalist
+id kk1 : basic worker Kaikenlainen Kaija, salary 3000
+id kk2 : basic worker Kukalie Kirsi, salary 2500
+id mm : basic worker Meikkis Matti, salary 2000
+id richbastard : commander Miljoona Miikka, salary 1000000
+id nobody : useless Olematon Oskari, salary 6000
+id doesall : general utility Sorrettu Sami, salary 1
+id tt : technical evangelist Teikkis Terttu, salary 4000
+> change_salary tt 1500
+id tt : technical evangelist Teikkis Terttu, salary 1500
+> ceo
+id richbastard : commander Miljoona Miikka, salary 1000000
+> underlings richbastard
+id richbastard : commander Miljoona Miikka, salary 1000000
+ id mm : basic worker Meikkis Matti, salary 2000
+  id doesall : general utility Sorrettu Sami, salary 1
+  id nobody : useless Olematon Oskari, salary 6000
+ id tt : technical evangelist Teikkis Terttu, salary 1500
+  id kk1 : basic worker Kaikenlainen Kaija, salary 3000
+  id kk2 : basic worker Kukalie Kirsi, salary 2500
+> # AFTER THIS NON-COMPULSORY PARTS ARE TESTED
+> nearest_common_boss doesall nobody
+id mm : basic worker Meikkis Matti, salary 2000
+> higher_lower_ranks mm
+Persons with higher rank (closer to ceo): 1
+Persons with lower rank (further away from ceo): 4
+> remove kk2
+> size
+Number of employees: 6
+> titlelist 'basic worker'
+id kk1 : basic worker Kaikenlainen Kaija, salary 3000
+id mm : basic worker Meikkis Matti, salary 2000
+> quit

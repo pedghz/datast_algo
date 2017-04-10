@@ -1,0 +1,51 @@
+# Test initial empty datastructure
+size
+# Add one person and test everything
+add 'Herbert Whoami' hw 'worker' 100
+size
+min
+max
+median
+1stquartile
+3rdquartile
+salarylist
+alphalist
+titlelist 'worker'
+titlelist 'something else'
+change_name hw 'No Body'
+alphalist
+change_salary hw 200
+median
+# Add two persons and boss relationships
+add 'Cecil Edward Ogg' 1 'ceo' 1000000
+add 'Other Worker' ow 'worker' 500
+size
+add_boss hw 1
+add_boss ow 1
+min
+max
+median
+1stquartile
+3rdquartile
+alphalist
+salarylist
+ceo
+underlings 1
+# AFTER THIS NON-COMPULSORY PARTS ARE TESTED
+nearest_common_boss hw ow
+higher_lower_ranks 1
+higher_lower_ranks hw
+# Remove persons
+remove hw
+remove 1
+size
+min
+max
+median
+1stquartile
+3rdquartile
+alphalist
+salarylist
+# Clear and check we have nothing
+clear
+size
