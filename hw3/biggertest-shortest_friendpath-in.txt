@@ -1,0 +1,21 @@
+# Simple test with just three employees
+add 'A' a 'Worker' 1
+add 'B' b 'Worker' 2
+add 'C' c 'Worker' 3
+add_friend a b 1
+add_friend b c 2
+friends_of b
+all_friendships
+shortest_friendpath a c
+add_friend a c 0
+shortest_friendpath a c
+clear
+# Read example in assignment description
+read 'example-data.txt'
+shortest_friendpath richbastard nobody
+clear
+# A little bigger and more complicated example
+read 'bigger-data.txt'
+shortest_friendpath BillWalsh JohnHarbaugh
+shortest_friendpath BillWalsh JimHarbaugh
+shortest_friendpath JettFisher SamWyche

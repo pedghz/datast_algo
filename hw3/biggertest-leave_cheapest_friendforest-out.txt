@@ -1,0 +1,273 @@
+> # Simple test with just three employees
+> add 'A' a 'Worker' 1
+> add 'B' b 'Worker' 2
+> add 'C' c 'Worker' 3
+> add_friend a b 1
+> add_friend b c 2
+> friends_of b
+id a : Worker A, salary 1 (cost 1)
+id c : Worker C, salary 3 (cost 2)
+> leave_cheapest_friendforest
+Remaining friend forest has 1 trees with the total cost of 3
+> all_friendships
+a - b
+b - c
+> add_friend a c 1
+> leave_cheapest_friendforest
+Remaining friend forest has 1 trees with the total cost of 2
+> all_friendships
+a - b
+a - c
+> clear
+Cleared all persons
+> # Read example in assignment description
+> read 'example-data.txt'
+** Commands from 'example-data.txt'
+> # Adding people
+> add 'Meikkis Matti' mm 'basic worker' 2000
+> add 'Teikkis Terttu' tt 'technical evangelist' 4000
+> add 'Miljoona Miikka' richbastard 'commander' 1000000
+> add 'Sorrettu Sami' doesall 'general utility' 1
+> add 'Keskiverto Keijo' kk1 'basic worker' 3000
+> add 'Kukalie Kirsi' kk2 'basic worker' 2500
+> add 'Olematon Oskari' nobody 'useless' 6000
+> # Adding boss relationships
+> add_boss mm richbastard
+> add_boss doesall mm
+> add_boss nobody mm
+> add_boss tt richbastard
+> add_boss kk1 tt
+> add_boss kk2 tt
+> # Add friendships
+> add_friend doesall nobody 1
+> add_friend mm doesall 3
+> add_friend tt mm 5
+> add_friend tt kk2 2
+> add_friend kk1 nobody 1
+> add_friend kk2 kk1 2
+> add_friend kk2 mm 4
+> add_friend richbastard mm 8
+> add_friend richbastard tt 2
+> 
+** End of commands from 'example-data.txt'
+> leave_cheapest_friendforest
+Remaining friend forest has 1 trees with the total cost of 11
+> all_friendships
+doesall - mm
+doesall - nobody
+kk1 - kk2
+kk1 - nobody
+kk2 - tt
+richbastard - tt
+> clear
+Cleared all persons
+> # A little bigger and more complicated example
+> read 'bigger-data.txt'
+** Commands from 'bigger-data.txt'
+> add 'Bill' BillWalsh 'good' 64411
+> add 'Mike' MikeHolmgren 'good' 57460
+> add 'Jim' JimFassel 'ugly' 18344
+> add 'Paul' PaulHackett 'bad' 77312
+> add 'Sam' SamWyche 'ugly' 13968
+> add 'George' GeorgeSeifert 'ugly' 25123
+> add 'Dennis' DennisGreen 'bad' 53497
+> add 'Jim' JimZorn 'good' 55230
+> add_boss MikeHolmgren BillWalsh
+> add_boss JimFassel BillWalsh
+> add_boss PaulHackett BillWalsh
+> add_boss SamWyche BillWalsh
+> add_boss GeorgeSeifert BillWalsh
+> add_boss DennisGreen BillWalsh
+> add_boss JimZorn MikeHolmgren
+> add 'Mike' MikeSherman 'bad' 34104
+> add 'Andy' AndyReid 'bad' 67585
+> add 'Ray' RayRhodes 'good' 33400
+> add 'Steve' SteveMariucci 'good' 3584
+> add 'John' JohnFox 'ugly' 21720
+> add 'Mike' MikeMcCarthy 'bad' 19307
+> add 'Jon' JonGruden 'good' 1336
+> add 'Bruce' BruceCoslet 'ugly' 53049
+> add 'Mike' MikeShanahan 'good' 70008
+> add 'Jett' JettFisher 'bad' 45815
+> add 'Mike' MikeTice 'good' 57608
+> add 'Brian' BrianBillick 'good' 34028
+> add 'John' JohnHarbaugh 'ugly' 18488
+> add 'Brad' BradChildress 'bad' 21930
+> add 'Jim' JimMora 'bad' 19477
+> add 'Marty' MartyMornhinweg 'good' 29066
+> add 'Raheem' RaheemMorris 'bad' 18395
+> add 'Bill' BillCallahan 'bad' 11011
+> add 'Gary' GaryKubiak 'bad' 64373
+> add 'Jim' JimSchwartz 'ugly' 85855
+> add 'Scott' ScottLinehan 'ugly' 15015
+> add 'Jack' JackDelRio 'bad' 29281
+> add 'Mike' MikeNolan 'good' 81903
+> add 'Rex' RexRyan 'ugly' 65599
+> add 'Tom' TomCable 'ugly' 35522
+> add 'Jim' JimHarbaugh 'ugly' 37186
+> add 'Pete' PeteCarroll 'bad' 4120
+> add_boss MikeSherman MikeHolmgren
+> add_boss AndyReid MikeHolmgren
+> add_boss RayRhodes MikeHolmgren
+> add_boss SteveMariucci MikeHolmgren
+> add_boss JohnFox JimFassel
+> add_boss MikeMcCarthy PaulHackett
+> add_boss JonGruden PaulHackett
+> add_boss BruceCoslet SamWyche
+> add_boss MikeShanahan GeorgeSeifert
+> add_boss JettFisher GeorgeSeifert
+> add_boss MikeTice DennisGreen
+> # Commented out for tests add_boss BrianBillick DennisGreen
+> add_boss JohnHarbaugh AndyReid
+> add_boss BradChildress AndyReid
+> add_boss JimMora SteveMariucci
+> add_boss MartyMornhinweg SteveMariucci
+> add_boss RaheemMorris JonGruden
+> add_boss BillCallahan JonGruden
+> add_boss GaryKubiak MikeShanahan
+> add_boss JimSchwartz JettFisher
+> add_boss ScottLinehan MikeTice
+> add_boss JackDelRio BrianBillick
+> add_boss MikeNolan BrianBillick
+> add_boss RexRyan BrianBillick
+> add_boss TomCable AndyReid
+> add_boss JimHarbaugh AndyReid
+> add_boss PeteCarroll BruceCoslet
+> add 'Mike' MikeSmith 'bad' 45495
+> add 'Mike' MikeSingletary 'ugly' 27654
+> add 'Norv' NorvTurner 'good' 69946
+> add_boss MikeSmith JackDelRio
+> add_boss MikeSingletary MikeNolan
+> add_boss NorvTurner MikeNolan
+> # Add friendships
+> add_friend BillWalsh ScottLinehan 69
+> add_friend JimFassel JackDelRio 31
+> add_friend JimFassel ScottLinehan 52
+> add_friend JimFassel JimMora 28
+> add_friend PaulHackett MikeSherman 44
+> add_friend PaulHackett JohnFox 16
+> add_friend PaulHackett NorvTurner 40
+> add_friend PaulHackett MikeSmith 33
+> add_friend SamWyche PaulHackett 35
+> add_friend SamWyche MikeSmith 9
+> add_friend SamWyche PeteCarroll 38
+> add_friend GeorgeSeifert TomCable 34
+> add_friend GeorgeSeifert MartyMornhinweg 13
+> add_friend GeorgeSeifert GaryKubiak 53
+> add_friend DennisGreen TomCable 15
+> add_friend DennisGreen MikeShanahan 88
+> add_friend DennisGreen PaulHackett 42
+> add_friend DennisGreen JimZorn 83
+> add_friend JimZorn JimSchwartz 20
+> add_friend JimZorn MikeTice 59
+> add_friend JimZorn JimMora 21
+> add_friend JimZorn GaryKubiak 50
+> add_friend MikeSherman RaheemMorris 46
+> add_friend MikeSherman JonGruden 67
+> add_friend AndyReid JimSchwartz 65
+> add_friend RexRyan BillCallahan 10
+> add_friend AndyReid PaulHackett 24
+> add_friend AndyReid ScottLinehan 1
+> add_friend RayRhodes DennisGreen 23
+> add_friend RayRhodes JimZorn 29
+> add_friend RayRhodes SteveMariucci 68
+> add_friend SteveMariucci JettFisher 18
+> add_friend SteveMariucci JimSchwartz 66
+> add_friend SteveMariucci TomCable 30
+> add_friend JohnFox DennisGreen 49
+> add_friend JohnFox GeorgeSeifert 70
+> add_friend JohnFox MikeShanahan 51
+> add_friend JohnFox BruceCoslet 55
+> add_friend MikeMcCarthy JimZorn 0
+> add_friend MikeMcCarthy BradChildress 75
+> add_friend JonGruden MikeTice 63
+> add_friend JonGruden MikeMcCarthy 7
+> add_friend BruceCoslet NorvTurner 62
+> add_friend BruceCoslet MikeSherman 37
+> add_friend BruceCoslet JackDelRio 78
+> add_friend BruceCoslet JimZorn 32
+> add_friend MikeShanahan BruceCoslet 26
+> add_friend MikeShanahan MikeSingletary 17
+> add_friend MikeShanahan PeteCarroll 27
+> add_friend MikeTice AndyReid 77
+> add_friend MikeTice MikeHolmgren 6
+> add_friend MikeTice JimSchwartz 22
+> add_friend MikeTice SamWyche 60
+> add_friend BrianBillick JimSchwartz 39
+> add_friend BrianBillick MartyMornhinweg 14
+> add_friend JohnHarbaugh JimFassel 45
+> add_friend JohnHarbaugh MartyMornhinweg 12
+> add_friend JohnHarbaugh JonGruden 19
+> add_friend JohnHarbaugh MikeNolan 61
+> add_friend BradChildress SamWyche 82
+> add_friend BradChildress MartyMornhinweg 36
+> add_friend BradChildress GeorgeSeifert 5
+> add_friend BradChildress NorvTurner 85
+> add_friend JimMora DennisGreen 81
+> add_friend MartyMornhinweg TomCable 64
+> add_friend MartyMornhinweg JohnFox 4
+> add_friend MartyMornhinweg JimZorn 76
+> add_friend RaheemMorris RayRhodes 87
+> add_friend RaheemMorris MikeHolmgren 48
+> add_friend RaheemMorris BradChildress 56
+> add_friend JimSchwartz MikeMcCarthy 79
+> add_friend JimSchwartz JettFisher 74
+> add_friend JimSchwartz JackDelRio 71
+> add_friend ScottLinehan JohnFox 54
+> add_friend JackDelRio BradChildress 25
+> add_friend JackDelRio PeteCarroll 11
+> add_friend MikeNolan JimZorn 80
+> add_friend RexRyan JimHarbaugh 84
+> add_friend TomCable JohnFox 47
+> add_friend TomCable JimZorn 73
+> add_friend JimHarbaugh BillCallahan 2
+> add_friend PeteCarroll BrianBillick 57
+> add_friend MikeSmith JonGruden 8
+> add_friend MikeSmith JohnHarbaugh 72
+> add_friend MikeSmith PeteCarroll 41
+> add_friend MikeSingletary MikeHolmgren 43
+> add_friend NorvTurner MikeSmith 3
+> add_friend NorvTurner DennisGreen 86
+> add_friend NorvTurner MikeSherman 58
+> 
+** End of commands from 'bigger-data.txt'
+> leave_cheapest_friendforest
+Remaining friend forest has 2 trees with the total cost of 728
+> all_friendships
+AndyReid - PaulHackett
+AndyReid - ScottLinehan
+BillCallahan - JimHarbaugh
+BillCallahan - RexRyan
+BillWalsh - ScottLinehan
+BradChildress - GeorgeSeifert
+BradChildress - JackDelRio
+BrianBillick - MartyMornhinweg
+BruceCoslet - MikeShanahan
+BruceCoslet - MikeSherman
+DennisGreen - RayRhodes
+DennisGreen - TomCable
+GaryKubiak - JimZorn
+GeorgeSeifert - MartyMornhinweg
+JackDelRio - PeteCarroll
+JettFisher - SteveMariucci
+JimFassel - JimMora
+JimMora - JimZorn
+JimSchwartz - JimZorn
+JimSchwartz - MikeTice
+JimZorn - MikeMcCarthy
+JimZorn - RayRhodes
+JohnFox - MartyMornhinweg
+JohnFox - PaulHackett
+JohnHarbaugh - JonGruden
+JohnHarbaugh - MartyMornhinweg
+JohnHarbaugh - MikeNolan
+JonGruden - MikeMcCarthy
+JonGruden - MikeSmith
+MikeHolmgren - MikeTice
+MikeShanahan - MikeSingletary
+MikeShanahan - PeteCarroll
+MikeSherman - RaheemMorris
+MikeSmith - NorvTurner
+MikeSmith - SamWyche
+SteveMariucci - TomCable
+> 

@@ -1,0 +1,21 @@
+clear
+size
+read 'example-data.txt'
+size
+all_friendships
+friends_of tt
+friends_of mm
+remove_friend tt mm
+friends_of tt
+friends_of mm
+shortest_friendpath richbastard nobody
+cheapest_friendpath richbastard nobody
+leave_cheapest_friendforest
+all_friendships
+check_boss_hierarchy
+add 'Me' me 'great' 1000
+add 'You' you 'sucker' 1
+add_boss me you
+add_boss you me
+check_boss_hierarchy
+quit

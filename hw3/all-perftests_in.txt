@@ -1,0 +1,5 @@
+# Run the performance tests for each operation
+read 'perftest-shortest_friendpath_in.txt'
+read 'perftest-check_boss_hierarchy_in.txt'
+read 'perftest-cheapest_friendpath_in.txt'
+read 'perftest-leave_cheapest_friendforest_in.txt'

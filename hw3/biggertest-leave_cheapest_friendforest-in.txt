@@ -1,0 +1,22 @@
+# Simple test with just three employees
+add 'A' a 'Worker' 1
+add 'B' b 'Worker' 2
+add 'C' c 'Worker' 3
+add_friend a b 1
+add_friend b c 2
+friends_of b
+leave_cheapest_friendforest
+all_friendships
+add_friend a c 1
+leave_cheapest_friendforest
+all_friendships
+clear
+# Read example in assignment description
+read 'example-data.txt'
+leave_cheapest_friendforest
+all_friendships
+clear
+# A little bigger and more complicated example
+read 'bigger-data.txt'
+leave_cheapest_friendforest
+all_friendships

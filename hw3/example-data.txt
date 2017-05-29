@@ -1,0 +1,25 @@
+# Adding people
+add 'Meikkis Matti' mm 'basic worker' 2000
+add 'Teikkis Terttu' tt 'technical evangelist' 4000
+add 'Miljoona Miikka' richbastard 'commander' 1000000
+add 'Sorrettu Sami' doesall 'general utility' 1
+add 'Keskiverto Keijo' kk1 'basic worker' 3000
+add 'Kukalie Kirsi' kk2 'basic worker' 2500
+add 'Olematon Oskari' nobody 'useless' 6000
+# Adding boss relationships
+add_boss mm richbastard
+add_boss doesall mm
+add_boss nobody mm
+add_boss tt richbastard
+add_boss kk1 tt
+add_boss kk2 tt
+# Add friendships
+add_friend doesall nobody 1
+add_friend mm doesall 3
+add_friend tt mm 5
+add_friend tt kk2 2
+add_friend kk1 nobody 1
+add_friend kk2 kk1 2
+add_friend kk2 mm 4
+add_friend richbastard mm 8
+add_friend richbastard tt 2

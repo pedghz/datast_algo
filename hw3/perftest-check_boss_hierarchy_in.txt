@@ -1,0 +1,3 @@
+# This tests only check_boss_hierarchy + adding people
+# Test by adding increasing number of persons, then run 100 random operations
+perftest check_boss_hierarchy;random_add 30 100 5 10;30;100;300;1000;3000;10000;30000;100000;300000;1000000

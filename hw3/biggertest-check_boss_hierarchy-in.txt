@@ -1,0 +1,30 @@
+# Simple test with just three employees
+add 'A' a 'Worker' 1
+add 'B' b 'Worker' 2
+add 'C' c 'Worker' 3
+add_boss b a
+add_boss c a
+check_boss_hierarchy
+add 'D' d 'Worker' 4
+check_boss_hierarchy
+add_boss a d
+check_boss_hierarchy
+add_boss d b
+check_boss_hierarchy
+clear
+# Read example in assignment description
+read 'example-data.txt'
+check_boss_hierarchy
+add 'Me' me 'great' 1000
+add 'You' you 'sucker' 1
+add_boss me you
+add_boss you me
+check_boss_hierarchy
+clear
+# A little bigger and more complicated example
+read 'bigger-data.txt'
+check_boss_hierarchy
+add_boss BrianBillick DennisGreen
+check_boss_hierarchy
+add_boss BillWalsh JimZorn
+check_boss_hierarchy

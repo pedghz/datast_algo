@@ -1,0 +1,10 @@
+# Read in all tests in one go
+testread 'smalltest-shortest_friendpath-in.txt' 'smalltest-shortest_friendpath-out.txt'
+clear
+testread 'smalltest-check_boss_hierarchy-in.txt' 'smalltest-check_boss_hierarchy-out.txt'
+clear
+testread 'smalltest-cheapest_friendpath-in.txt' 'smalltest-cheapest_friendpath-out.txt'
+clear
+testread 'smalltest-leave_cheapest_friendforest-in.txt' 'smalltest-leave_cheapest_friendforest-out.txt'
+clear
+# !!!! Remember to check EACH result above!
